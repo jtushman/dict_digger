@@ -1,4 +1,5 @@
 .idea/
+*.ipynb
 *.py[cod]
 
 # C extensions

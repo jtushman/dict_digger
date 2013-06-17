@@ -23,21 +23,16 @@ Usage
 
     h = {
         'a': {
-            'b': 'tuna',
-            'c': 'fish'
-        }
-        'b': {}
+             'b': 'tuna',
+             'c': 'fish'
+         },
+         'b': {}
     }
 
-    result = dict_digger(h, ['a','b'])
+    result = dict_digger.dig(h, 'a','b')
     print result  # prints 'tuna'
 
     result = dict_digger(h, ['c','a']
-    # Does not through an error, just returns None
+    print result # prints None
+    # Important!!  Does not through an error, just returns None
 
-
-    print time_ago_in_words()
-    #prints "just now"
-
-    print time_ago_in_words(begining_of_day())
-    # prints 8 hours ago
