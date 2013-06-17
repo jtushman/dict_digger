@@ -32,7 +32,7 @@ Usage
     result = dict_digger.dig(h, 'a','b')
     print result  # prints 'tuna'
 
-    result = dict_digger(h, ['c','a']
+    result = dict_digger.dig(h, 'c','a')
     print result # prints None
     # Important!!  Does not through an error, just returns None
 
