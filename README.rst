@@ -4,6 +4,7 @@ dict_digger
 Digs into Dicts
 
 Useful syntax for digging into nested dictionaries, and removes the need to check if a key exists, or handling of
+KeyError
 
 
 Installation
