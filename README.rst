@@ -36,3 +36,13 @@ Usage
     print result # prints None
     # Important!!  Does not through an error, just returns None
 
+
+Testing
+-------
+
+We are using nose
+
+.. code-block:: bash
+
+    $ nosetests
+
