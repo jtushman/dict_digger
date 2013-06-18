@@ -47,7 +47,7 @@ Alternatives
     try:
         result = h['c']['a']
     except KeyError:
-        bill_to = None
+        result = None
 
 Testing
 -------
