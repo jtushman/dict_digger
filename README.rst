@@ -3,7 +3,7 @@ dict_digger
 
 Digs into Dicts
 
-Useful syntax for digging into nested dictionaries, and removes the need to check if a key exists
+Useful syntax for digging into nested dictionaries, and removes the need to check if a key exists, or handling of
 
 
 Installation
@@ -11,7 +11,7 @@ Installation
 
 .. code-block:: bash
 
-    $ pip install
+    $ pip install dict_digger
 
 
 Usage
@@ -36,6 +36,17 @@ Usage
     print result # prints None
     # Important!!  Does not through an error, just returns None
 
+
+
+Alternatives
+------------
+
+.. code-block:: python
+
+    try:
+        result = h['c']['a']
+    except KeyError:
+        bill_to = None
 
 Testing
 -------
