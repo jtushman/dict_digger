@@ -3,8 +3,8 @@ dict_digger
 
 Digs into Dicts
 
-Useful syntax for digging into nested dictionaries, and removes the need to check if a key exists, or handling of
-KeyError
+Useful syntax for digging into nested dictionaries, lists and tuples, and removes the need to check if a key or index exists, or handling of
+KeyError or IndexError
 
 
 Installation
@@ -36,6 +36,10 @@ Usage
     result = dict_digger.dig(h, 'c','a')
     print result # prints None
     # Important!!  Does not through an error, just returns None
+
+    #but if you like
+    result = dict_digger.dig(h, 'c','a', fail=True)
+    # raises a KeyError
 
 
 
