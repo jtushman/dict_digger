@@ -1,7 +1,7 @@
 dict_digger
 ===========
 
-Digs into Dicts
+Digs into Dicts (or Lists, or Tuples or Complex objects)
 
 Useful syntax for digging into nested dictionaries, lists and tuples, and removes the need to check if a key or index exists, or handling of
 KeyError or IndexError
