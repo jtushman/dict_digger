@@ -41,6 +41,17 @@ Usage
     result = dict_digger.dig(h, 'c','a', fail=True)
     # raises a KeyError
 
+    # also support complex objects so ...
+
+    complex = {
+        'a': {
+             ['tuna','fish']
+         },
+         'b': {}
+    }
+    result = dict_digger.dig(complex, 'a',0)
+    print result #prints tuna
+
 
 
 Alternatives
