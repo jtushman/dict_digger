@@ -20,7 +20,7 @@ Usage
 
 .. code-block:: python
 
-    import dict_digger
+    from dict_digger import dig
 
     h = {
         'a': {
@@ -30,15 +30,15 @@ Usage
          'b': {}
     }
 
-    result = dict_digger.dig(h, 'a','b')
+    result = dig(h, 'a','b')
     print result  # prints 'tuna'
 
-    result = dict_digger.dig(h, 'c','a')
+    result = dig(h, 'c','a')
     print result # prints None
     # Important!!  Does not through an error, just returns None
 
     #but if you like
-    result = dict_digger.dig(h, 'c','a', fail=True)
+    result = dig(h, 'c','a', fail=True)
     # raises a KeyError
 
     # also support complex objects so ...
@@ -49,7 +49,7 @@ Usage
          },
          'b': {}
     }
-    result = dict_digger.dig(complex, 'a',0)
+    result = dig(complex, 'a',0)
     print result #prints tuna
 
 
