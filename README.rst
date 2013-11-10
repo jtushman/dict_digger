@@ -35,13 +35,13 @@ Usage
 
     result = dig(h, 'c','a')
     print result # prints None
-    # Important!!  Does not through an error, just returns None
+    # Important!!  Does not throw an error, just returns None
 
-    #but if you like
+    # but if you like
     result = dig(h, 'c','a', fail=True)
     # raises a KeyError
 
-    # also support complex objects so ...
+    # also supports complex objects so ...
 
     complex = {
         'a': {
